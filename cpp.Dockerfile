@@ -8,9 +8,7 @@ SHELL ["/bin/bash", "-c"]
 
 RUN apt-get update
 RUN apt-get install -y \
-    build-essential \
-    cmake \
-    unzip
+    build-essential
 
 RUN --network=none groupadd -r builders && useradd --no-log-init -r -g builders builder
 USER builder:builders
