@@ -2,7 +2,7 @@
 #include <cstdlib>
 
 auto main (int c, char *v[]) -> int {
-  std::cout << "Hello, world!\n";
+  std::cout << "Hello, PXL!\n";
   
   std::exit(EXIT_SUCCESS);
 }
