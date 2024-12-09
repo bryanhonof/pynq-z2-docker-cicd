@@ -38,5 +38,6 @@ RUN --network=none groupadd -r runners && useradd --no-log-init -r -g runners ap
 USER app:runners
 
 COPY --chown=app:runners --chmod=100 --from=build /build/hello.exe /app/hello.exe
+ADD --chown=app:runners --chmod=700 ./hello.sh .
 
-ENTRYPOINT [ "/app/hello.exe" ]
+ENTRYPOINT [ "/app/hello.sh" ]
