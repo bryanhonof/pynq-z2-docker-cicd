@@ -2,6 +2,7 @@ name: ci
 
 on:
   push:
+  pull_request:
   workflow_dispatch:
   schedule:
     # Run a so-called "nightly" build
